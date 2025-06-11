@@ -5,6 +5,5 @@ services:
       TELEGRAM_TOKEN: "Get your token from @botfather"
       YOUTUBE_LANGUAGES: "en,it"
       YOUTUBE_COOKIES: "cookies.txt"
-
     volumes:
       - "./youtube_cookies.txt:/app/cookies.txt:ro"
