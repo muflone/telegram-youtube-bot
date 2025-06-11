@@ -85,7 +85,7 @@ class Bot:
         /ytt
         Get the audio transcript from the YouTube video
         (replying to a message containing a YouTube link)
-        
+
         /version
         Get the bot version
         """)
