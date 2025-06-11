@@ -53,6 +53,9 @@ class Bot:
             command='help',
             callback=self.command_help))
         self.application.add_handler(handler=telegram.ext.CommandHandler(
+            command='ping',
+            callback=self.command_ping))
+        self.application.add_handler(handler=telegram.ext.CommandHandler(
             command='version',
             callback=self.command_version))
         self.application.add_handler(handler=telegram.ext.CommandHandler(
@@ -86,9 +89,22 @@ class Bot:
         Get the audio transcript from the YouTube video
         (replying to a message containing a YouTube link)
 
+        /ping
+        Ping if the bot is alive
+
         /version
         Get the bot version
         """)
+
+    async def command_ping(
+            self,
+            update: telegram.Update,
+            context: telegram.ext.ContextTypes.DEFAULT_TYPE
+    ) -> None:
+        """
+        Send a message when the command /ping is issued.
+        """
+        await update.message.reply_text('PONG')
 
     async def command_version(
             self,
