@@ -18,6 +18,7 @@ Process YouTube links
 
 * Python >= 3.7 (developed and tested for Python 3.14)
 * Python Telegram Bot ( https://pypi.org/project/python-telegram-bot/ )
+* YouTube Transcript API ( https://pypi.org/project/youtube-transcript-api/ )
 
 # Usage
 
