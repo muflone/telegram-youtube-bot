@@ -24,4 +24,13 @@ Process YouTube links
 
     cd /path/to/folder
     export TELEGRAM_TOKEN="YOUR:TOKEN"
+    export YOUTUBE_LANGUAGES="en,it"
+    export YOUTUBE_COOKIES="cookies.txt"
     python3 main.py
+
+The cookies.txt file is optional and can be got from your own browser:
+
+- [Cookie-Editor](https://chromewebstore.google.com/detail/cookie-editor/hlkenndednhfkekhgcdicdfddnkalmdm?hl=en)
+  for Google Chrome
+- [cookies.txt](https://addons.mozilla.org/en-US/firefox/addon/cookies-txt/)
+  for Mozilla Firefox
