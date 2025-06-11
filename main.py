@@ -123,7 +123,7 @@ class Bot:
                 if yt_video_id := yt_link.rsplit('/')[-1].rsplit('=')[-1]:
                     logging.info(f'YouTube video ID: {yt_video_id}')
                     transcript = youtube_transcript_api.YouTubeTranscriptApi(
-                        cookie_path=self.youtube_cookies_file)
+                        cookie_path=self.youtube_cookies_file or None)
                     try:
                         transcripts = transcript.fetch(
                             video_id=yt_video_id,
